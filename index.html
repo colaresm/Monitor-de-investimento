@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Home</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- Third party plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Ações</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#cripto">Cripto</a></li>
+ 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-10 align-self-end">
+                        <h1 class="text-uppercase text-white font-weight-bold">Monitore seus investimentos favoritos</h1>
+                        <hr class="divider my-4" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- About-->
+      
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <h2 class="text-center mt-0">Ações</h2>
+                
+                 <div class="row">
+                    <div class="col-sm-4"><canvas id="Itausa" width="800" height="450"></canvas></div>
+                    <div class="col-sm-4"> <canvas id="IBOVESPA" width="800" height="450"></canvas></div>
+                    <div class="col-sm-4"><canvas id="PETR4" width="800" height="450"></canvas></div>
+                  </div> 
+                
+                <script>
+                 new Chart(document.getElementById("IBOVESPA"), {
+                   type: 'line',
+                   data: {
+                     labels: ["06/2020","07/2020","08/2020","09/2020","10/2020","11/2020","12/2020","01/2021","02/2021","03/2021","04/2021","05/2021","06/2021"],
+                     datasets: [{ 
+                         data: [95.056,102.912,95,99.369,94.603,93.952,108.888,119.306,116.007,110.035,116.634,118.894,119.564],
+                         label: " ",
+                         borderColor: "black",
+                         fill: true
+                       }
+                     ]
+                   },
+                   options: {
+                     title: {
+                       display: true,
+                       text: 'IBOVESPA'
+                     }
+                   }
+                 });
+                </script>                 
+  <script>
+    new Chart(document.getElementById("PETR4"), {
+      type: 'line',
+      data: {
+        labels: ["06/2020","07/2020","08/2020","09/2020","10/2020","11/2020","12/2020","01/2021","02/2021","03/2021","04/2021","05/2021","06/2021"],
+        datasets: [{ 
+            data: [21.5,22.20,22,21.89,19.61,18.94,24.90,28.34,26.69,22.24,24.10,23.62,23,23.82],
+            label: " ",
+            borderColor: "black",
+            fill: true
+          }
+        ]
+      },
+      options: {
+        title: {
+          display: true,
+          text: 'PETR4'
+        }
+      }
+    });
+   </script>          
+   <script>
+    new Chart(document.getElementById("Itausa"), {
+      type: 'line',
+      data: {
+        labels: ["06/2020","07/2020","08/2020","09/2020","10/2020","11/2020","12/2020","01/2021","02/2021","03/2021","04/2021","05/2021","06/2021"],
+        datasets: [{ 
+            data: [9.59,10,10.67,9.43,9.40,9.35,8.80,8.50,9.09,10.58,10,10.20,10.61,10.20,9.95,10.32,10,10.10,10.06,10,10.22,10.20],
+            label: " ",
+            borderColor: "black",
+            fill: true
+          }
+        ]
+      },
+      options: {
+        title: {
+          display: true,
+          text: 'Itausa'
+        }
+      }
+    });
+   </script>         
+
+            </div>
+        </section>
+             <!-- cripto-->
+           <section class="page-section" id="cripto">
+            <div class="container">
+                <h2 class="text-center mt-0">Criptomoedas</h2>
+                
+                 <div class="row">
+                    <div class="col-sm-4"><canvas id="BTC" width="800" height="450"></canvas></div>
+                    <div class="col-sm-4"> <canvas id="ETH" width="800" height="450"></canvas></div>
+                    <div class="col-sm-4"><canvas id="BNB" width="800" height="450"></canvas></div>
+                  </div> 
+                
+                <script>
+                 new Chart(document.getElementById("BTC"), {
+                   type: 'line',
+                   data: {
+                     labels: ["06/2020","07/2020","08/2020","09/2020","10/2020","11/2020","12/2020","01/2021","02/2021","03/2021","04/2021","05/2021","06/2021"],
+                     datasets: [{ 
+                         data: [9137,11323,11680,10787,13781,19625,29000,33114,45137,58918,57750,57424,56469],
+                         label: " ",
+                         borderColor: "black",
+                         fill: true
+                       }
+                     ]
+                   },
+                   options: {
+                     title: {
+                       display: true,
+                       text: 'BTC'
+                     }
+                   }
+                 });
+                </script>                 
+  <script>
+    new Chart(document.getElementById("ETH"), {
+      type: 'line',
+      data: {
+        labels: ["06/2020","07/2020","08/2020","09/2020","10/2020","11/2020","12/2020","01/2021","02/2021","03/2021","04/2021","05/2021","06/2021"],
+        datasets: [{ 
+            data: [226,345,435,360,386,614,737,1314,1416,1918,2773,3522,3522,3497],
+            label: " ",
+            borderColor: "black",
+            fill: true
+          }
+        ]
+      },
+      options: {
+        title: {
+          display: true,
+          text: 'ETH'
+        }
+      }
+    });
+   </script>          
+   <script>
+    new Chart(document.getElementById("BNB"), {
+      type: 'line',
+      data: {
+        labels: ["06/2020","07/2020","08/2020","09/2020","10/2020","11/2020","12/2020","01/2021","02/2021","03/2021","04/2021","05/2021","06/2021"],
+        datasets: [{ 
+            data: [15,20,23,29,28,31,27,44,209,302,624,651,634],
+            label: " ",
+            borderColor: "black",
+            fill: true
+          }
+        ]
+      },
+      options: {
+        title: {
+          display: true,
+          text: 'BNB'
+        }
+      }
+    });
+   </script>         
+
+            </div>
+        </section>
+        <!-- Call to action-->
+       
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="mt-0">Sobre mim</h2>
+                        <hr class="divider my-4" />
+                        <p class="text-muted mb-5">Granduando em engenharia de telecomunicações, entusiasta em tecnologia</p>
+                    </div>
+                </div>
+   
+                    <div class="col-lg-8 mr-auto text-center">
+                        <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+                        <center>
+                        <a class="" href="mailto:colaresmarcelo2018@gmail.com">colaresmarcelo2018@gmail.com</a>
+                    </div>
+                </center>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="bg-light py-5">
+            <div class="container">
+                <div class="small text-center text-muted">
+                    Copyright &copy;
+          
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    - Monitor de investimentos
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
